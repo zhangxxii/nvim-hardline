@@ -21,7 +21,8 @@ end
 
 local function get_item()
   local name = get_name()
-  local flags = table.concat({get_readonly(), get_modified()})
+  --local flags = table.concat({get_readonly(), get_modified()})
+  local flags = table.concat({get_readonly()})
   if flags ~= '' then
     flags = ' ' .. flags
   end
