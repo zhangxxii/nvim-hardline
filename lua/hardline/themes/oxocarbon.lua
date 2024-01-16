@@ -48,15 +48,15 @@ return {
 		},
 		visual = {
 			guifg = colors.base00.gui,
-			guibg = colors.base0D.gui,
+			guibg = colors.purple.gui,
 			ctermfg = colors.base00.cterm,
-			ctermbg = colors.base0D.cterm,
+			ctermbg = colors.purple.cterm,
 		},
 		command = {
 			guifg = colors.base01.gui,
-			guibg = colors.purple.gui,
+			guibg = colors.base0A.gui,
 			ctermfg = colors.base01.cterm,
-			ctermbg = colors.purple.cterm,
+			ctermbg = colors.base0A.cterm,
 		},
 	},
 	low = {
