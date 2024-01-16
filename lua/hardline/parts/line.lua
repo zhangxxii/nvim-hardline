@@ -21,7 +21,7 @@ local function get_percent()
 end
 
 local function get_item()
-  return table.concat({get_line(), get_column(), get_percent()}, ' ')
+  return table.concat({get_line(), get_column()}, ' ')
 end
 
 return {
