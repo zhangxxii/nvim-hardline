@@ -5,7 +5,7 @@ local colors = {
 	base03 = { gui = "#525252", cterm = "59" },
 	base04 = { gui = "#dde1e6", cterm = "252" },
 	base05 = { gui = "#f2f4f8", cterm = "255" },
-	base06 = { gui = "#ffffff", cterm = "15" },
+	base06 = { gui = "#d4d4d4", cterm = "15" },
 	base07 = { gui = "#08bdba", cterm = "14" },
 	base08 = { gui = "#3ddbd9", cterm = "81" },
 	base09 = { gui = "#0078d4", cterm = "75" },
