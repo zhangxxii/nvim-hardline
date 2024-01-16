@@ -14,7 +14,7 @@ end
 local function get_column()
   local nbcol = vim.fn.col('$') - 1
   local col = vim.fn.col('.')
-  return fmt('%s%d/%s%d', pad(col, 100), col, pad(nbcol, 100), nbcol)
+  return fmt('%d/%d', col,  nbcol)
 end
 
 local function get_percent()
