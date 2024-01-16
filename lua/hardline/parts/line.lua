@@ -1,7 +1,7 @@
 local fmt = string.format
 
 local function pad(c, m)
-  local padch = '·'
+  local padch = ' '
   return string.rep(padch, string.len(tostring(m)) - string.len(tostring(c)))
 end
 
