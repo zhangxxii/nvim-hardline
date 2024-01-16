@@ -40,14 +40,16 @@ local function get_branch()
 end
 
 local function get_item()
-  local hunks, branch = get_hunks(), get_branch()
-  if hunks == concat_hunks({0, 0, 0}) and branch == '' then
-    hunks = ''
-  end
-  if hunks ~= '' and branch ~= '' then
-    branch = ' ' .. branch
-  end
-  return table.concat({hunks, branch})
+
+  return get_branch()
+--  local hunks, branch = get_hunks(), get_branch()
+--  if hunks == concat_hunks({0, 0, 0}) and branch == '' then
+--    hunks = ''
+--  end
+--  if hunks ~= '' and branch ~= '' then
+--    branch = ' ' .. branch
+--  end
+--  return table.concat({hunks, branch})
 end
 
 return {
