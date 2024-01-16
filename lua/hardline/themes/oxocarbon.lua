@@ -34,10 +34,10 @@ return {
 			ctermbg = colors.base09.cterm,
 		},
 		insert = {
-			guifg = colors.base01.gui,
-			guibg = colors.base0A.gui,
-			ctermfg = colors.base01.cterm,
-			ctermbg = colors.base0A.cterm,
+			guifg = colors.base00.gui,
+			guibg = colors.base0D.gui,
+			ctermfg = colors.base00.cterm,
+			ctermbg = colors.base0D.cterm,
 		},
 		replace = {
 			guifg = colors.base00.gui,
@@ -52,10 +52,10 @@ return {
 			ctermbg = colors.base0D.cterm,
 		},
 		command = {
-			guifg = colors.base00.gui,
-			guibg = colors.base0D.gui,
-			ctermfg = colors.base00.cterm,
-			ctermbg = colors.base0D.cterm,
+			guifg = colors.base01.gui,
+			guibg = colors.base0A.gui,
+			ctermfg = colors.base01.cterm,
+			ctermbg = colors.base0A.cterm,
 		},
 	},
 	low = {
