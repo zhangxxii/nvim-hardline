@@ -1,27 +1,23 @@
 local fmt = string.format
 
-local function pad(c, m)
-  local padch = ' '
-  return string.rep(padch, string.len(tostring(m)) - string.len(tostring(c)))
-end
 
 local function get_line()
   local nbline = vim.fn.line('$')
   local line = vim.fn.line('.')
-  return fmt('%s%d/%d', pad(line, nbline), line, nbline)
+  return fmt('[%d/%d', line, nbline)
 end
 
 local function get_column()
   local nbcol = vim.fn.col('$') - 1
   local col = vim.fn.col('.')
-  return fmt('%d/%d', col,  nbcol)
+  return fmt('%d/%d]', col,  nbcol)
 end
 
 local function get_percent()
   local nb_lines = vim.fn.line('$')
   local line = vim.fn.line('.')
   local percent = math.floor(line * 100 / nb_lines)
-  return fmt('%s%d%%%%', pad(percent, 100), percent)
+  return fmt('%d%%%%', percent)
 end
 
 local function get_item()
