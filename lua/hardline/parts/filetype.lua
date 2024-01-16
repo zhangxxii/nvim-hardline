@@ -1,5 +1,5 @@
 local function get_item()
-  return vim.bo.filetype
+  return string.upper(vim.bo.filetype)
 end
 
 return {
