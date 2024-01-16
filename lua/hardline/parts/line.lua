@@ -21,7 +21,14 @@ local function get_percent()
 end
 
 local function get_item()
-  return table.concat({get_line(), get_column()}, ' ')
+  --return table.concat({get_line(), get_column()}, ' ')
+
+  local line = vim.fn.line('.')
+  local nbline = vim.fn.line('$')
+  local col = vim.fn.col('.')
+  local nbcol = vim.fn.col('$')
+  return fmt('[%d:%d %d:%d]', line, nbline, col, nbcol)
+
 end
 
 return {
