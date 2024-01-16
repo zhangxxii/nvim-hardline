@@ -8,7 +8,7 @@ local colors = {
 	base06 = { gui = "#ffffff", cterm = "15" },
 	base07 = { gui = "#08bdba", cterm = "14" },
 	base08 = { gui = "#3ddbd9", cterm = "81" },
-	base09 = { gui = "#78a9ff", cterm = "75" },
+	base09 = { gui = "#0078d4", cterm = "75" },
 	base0A = { gui = "#ee5396", cterm = "205" },
 	base0B = { gui = "#33b1ff", cterm = "39" },
 	base0C = { gui = "#ff7eb6", cterm = "205" },
