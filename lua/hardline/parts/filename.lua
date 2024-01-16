@@ -25,7 +25,7 @@ local function get_item()
   if flags ~= '' then
     flags = ' ' .. flags
   end
-  return table.concat({name, flags})
+  return table.concat({flags, name})
 end
 
 return {
