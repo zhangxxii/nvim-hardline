@@ -15,6 +15,7 @@ local colors = {
 	base0D = { gui = "#42be65", cterm = "71" },
 	base0E = { gui = "#be95ff", cterm = "183" },
 	base0F = { gui = "#82cfff", cterm = "75" },
+	purple = { gui = "#5b2d70", cterm = "75" },
 }
 
 local inactive = {
@@ -53,9 +54,9 @@ return {
 		},
 		command = {
 			guifg = colors.base01.gui,
-			guibg = colors.base0A.gui,
+			guibg = colors.purple.gui,
 			ctermfg = colors.base01.cterm,
-			ctermbg = colors.base0A.cterm,
+			ctermbg = colors.purple.cterm,
 		},
 	},
 	low = {
