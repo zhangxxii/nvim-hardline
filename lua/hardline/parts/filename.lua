@@ -23,10 +23,10 @@ local function get_item()
   local name = get_name()
   --local flags = table.concat({get_readonly(), get_modified()})
   local flags = get_readonly()
-  if flags ~= '' then
-    flags = ' ' .. flags
-  end
-  return table.concat({'✎ ', flags, name})
+  --if flags ~= '' then
+    --flags = ' ' .. flags
+  --end
+  return table.concat({' ✎ ', flags, name})
 end
 
 return {
