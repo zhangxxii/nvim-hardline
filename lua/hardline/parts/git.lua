@@ -36,7 +36,7 @@ local function get_branch()
   elseif vim.b.gitsigns_head ~= nil then
     branch = vim.b.gitsigns_head
   end
-  return branch ~= '' and fmt('%s', branch) or ''
+  return branch ~= '' and fmt('♪ %s', branch) or ''
 end
 
 local function get_item()
