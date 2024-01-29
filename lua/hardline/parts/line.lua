@@ -27,7 +27,7 @@ local function get_item()
   local nbline = vim.fn.line('$')
   local col = vim.fn.col('.')
   local nbcol = vim.fn.col('$') - 1
-  return fmt('[%d:%d %d:%d]', line, nbline, col, nbcol)
+  return fmt('[%d/%d %d/%d]', line, nbline, col, nbcol)
 
 end
 
