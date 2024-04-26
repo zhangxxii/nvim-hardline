@@ -26,7 +26,6 @@ local function get_item()
   if flags ~= '' then
     flags = ' ' .. flags
   end
-  local buf_num = get_buf_num()
   return table.concat({flags, name})
 end
 
