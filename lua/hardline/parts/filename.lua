@@ -19,10 +19,6 @@ local function get_modified()
   return ''
 end
 
-local function get_buf_num()
-  return '[' .. vim.api.nvim_get_current_buf() .. '] '
-end
-
 local function get_item()
   local name = get_name()
   --local flags = table.concat({get_readonly(), get_modified()})
@@ -31,7 +27,7 @@ local function get_item()
     flags = ' ' .. flags
   end
   local buf_num = get_buf_num()
-  return table.concat({buf_num, flags, name})
+  return table.concat({flags, name})
 end
 
 return {
