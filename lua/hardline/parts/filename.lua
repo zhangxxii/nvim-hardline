@@ -20,7 +20,7 @@ local function get_modified()
 end
 
 local function get_buf_num()
-  return vim.api.nvim_get_current_buf()
+  return '[' .. vim.api.nvim_get_current_buf() .. '] '
 end
 
 local function get_item()
